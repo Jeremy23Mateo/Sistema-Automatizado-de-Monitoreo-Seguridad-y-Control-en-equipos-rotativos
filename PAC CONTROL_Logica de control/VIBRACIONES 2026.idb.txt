@@ -1,0 +1,146 @@
+# REV = 2
+
+# PAC CONTROL TAG DATABASE DUMP
+# ----------------------------------------------------------------
+# NAME :         C:\Users\Aprendiz\Documents\VIBRACIONES 2026\CONTROL\VIBRACIONES 2026.idb
+# VERSION :      R10.6a
+# TIME/DATE :    15:1:55 5/26/2026
+# 
+# INSTRUCTIONS : This file gets written with the corresponding IDB file.
+#                It is not read by PAC Control. It may be used by other programs to 
+#                get basic information about the tag database.
+#                
+#                Each tag (e.g. variables, I/O units and points, charts, etc.) is 
+#                listed here. 
+#                
+#                More columns or tag types (e.g. TAG2) may be added in the future.
+#                
+#                
+# BITMASK INFO:  Here is the list of bitmasks used by PAC Control.
+#                More than one bit may be set for a given tag. Currently, the only types
+#                that can have more than one bit set at a time are digital points with 
+#                features (e.g. digital input with counter) or a pointer.
+#                
+#                BITMASK 0
+#                -------------------------------------------
+#                DIN_SMART                        0x40000000
+#                DIN_COUNTER                      0x00000001
+#                DIN_COUNTER_QUADRATURE           0x00000002
+#                DOUT_SMART                       0x10000000
+#                DOUT_TPO                         0x00010000
+#                DIN_ON_PULSE_MEAS                0x00000010
+#                DIN_OFF_PULSE_MEAS               0x00000020
+#                DIN_FREQUENCY                    0x00000040
+#                DIN_PERIOD                       0x00000080
+#                DIN_ON_TIME_TOTALIZER            0x00000100
+#                DIN_OFF_TIME_TOTALIZER           0x00000200
+#                
+#                BITMASK 1
+#                -------------------------------------------
+#                AIN                              0x00000001
+#                AOUT                             0x00000002
+#                PID_LOOP    (mistic)             0x00000200
+#                PID_LOOP_2  (OptoMMP)            0x00000004
+#                DIGITAL_EVENT_REACTION           0x00000008
+#                ANALOG_EVENT_REACTION            0x00000010
+#                EVENT_REACTION_GROUP             0x00000080
+#                CHART                            0x00000100
+#                SERIAL_CHANNEL                   0x00000400
+#                
+#                BITMASK 2
+#                -------------------------------------------
+#                G4EB2                            0x00000001
+#                G4D16R                           0x00000002
+#                G4D32RS                          0x00000004
+#                G4A8R, G4RAX                     0x00000008
+#                B200                             0x00001000
+#                B3000 (digital)                  0x00002000
+#                B3000 (analog)                   0x00004000
+#                B100                             0X00010000
+#                SNAP-BRS                         0X00020000
+#                SNAP-ENET-D64                    0x00040000
+#                SNAP-B3000-ENET, SNAP-ENET-RTC   0x00080000
+#                SNAP-UP1-D64                     0x00100000
+#                SNAP-UP1-ADS                     0x00200000
+#                SNAP-UP1-M64                     0x00400000
+#                SNAP-ENET-S64                    0x00800000
+#                SNAP-PAC-R1                      0x10000000
+#                SNAP-PAC-R2                      0x20000000
+#                Generic memory map device        0x40000000
+#                SNAP-PAC-R1-B                    0x80000000
+#                SNAP-PAC-EB1                     0x00000010
+#                SNAP-PAC-EB2                     0x00000020
+#                SNAP-PAC-SB1                     0x00000100
+#                SNAP-PAC-SB2                     0x00000200
+#                E1                               0x01000000
+#                E2                               0x02000000
+#                GRV-EPIC-PR1                     0x04000000
+#                GRV-EPIC-PR2                     0x08000000
+# 
+#                BITMASK 3
+#                -------------------------------------------
+#                VARIABLE_INTEGER                 0x00000008
+#                VARIABLE_FLOAT                   0x00000010
+#                VARIABLE_TIMER                   0x00000020
+#                VARIABLE_STRING                  0x00000040
+#                VARIABLE_POINTER                 0x80000000
+#                TABLE_INTEGER                    0x00000100
+#                TABLE_FLOAT                      0x00000200
+#                TABLE_STRING                     0x00000800
+#                TABLE_POINTER                    0x00001000
+#                VARIABLE_UP_TIMER                0X00002000
+#                VARIABLE_INTEGER_64              0X00004000
+#                TABLE_INTEGER_64                 0X00010000
+#                TABLE_NULL                       0X00020000
+#                VARIABLE_STREAM                  0x00040000
+
+#                BITMASK 4
+#                -------------------------------------------
+#                GRV-R7-MM1001-10                 0x00000001
+#                GRV-R7-MM2001-10                 0x00000002
+#                GRV-R7-I1VAPM-3                  0x00000004
+
+
+
+# TAG1,NAME,ID,BITMASK_0,BITMASK_1,BITMASK_2,BITMASK_3,TABLE_LENGTH,STRING_WIDTH
+# TAG2,NAME,ID,BITMASK_0,BITMASK_1,BITMASK_2,BITMASK_3,BITMASK_4
+
+TAG1,Powerup                                           ,0    ,00000000,00000100,00000000,00000000,0    ,0   
+TAG1,GROV_EPIC                                         ,0    ,00000000,00000000,04000000,00000000,0    ,0   
+TAG1,AL_M1_CA                                          ,0    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M1_CB                                          ,1    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M2_CA                                          ,2    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M2_CB                                          ,3    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M3_CA                                          ,4    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M3_CB                                          ,5    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M4_CA                                          ,6    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M4_CB                                          ,7    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M6_CA                                          ,8    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M6_CB                                          ,9    ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M7_CA                                          ,10   ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_M7_CB                                          ,11   ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,AL_TEMP                                           ,12   ,40000000,00000000,00000000,00000000,0    ,0   
+TAG1,BOCINA                                            ,25   ,10000000,00000000,00000000,00000000,0    ,0   
+TAG1,M1_CA                                             ,12   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M1_CB                                             ,13   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M2_CA                                             ,14   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M2_CB                                             ,15   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M3_CA                                             ,16   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M3_CB                                             ,17   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M4_CA                                             ,18   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M4_CB                                             ,19   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M6_CA                                             ,20   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M6_CB                                             ,21   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M7_CA                                             ,22   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,M7_CB                                             ,23   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,TEMP                                              ,24   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,TEMP_GROOV                                        ,37   ,00000000,00000001,00000000,00000000,0    ,0   
+TAG1,FRECUENCIA                                        ,4    ,00000000,00000000,00000000,00000010,0    ,0   
+TAG1,HZ_SP                                             ,7    ,00000000,00000000,00000000,00000008,0    ,0   
+TAG1,HZ_VARIADOR                                       ,5    ,00000000,00000000,00000000,00000008,0    ,0   
+TAG1,node_red                                          ,0    ,00000000,00000000,00000000,00000008,0    ,0   
+TAG1,ON_OFF_VAR                                        ,1    ,00000000,00000000,00000000,00000008,0    ,0   
+TAG1,RESET_ERROR                                       ,2    ,00000000,00000000,00000000,00000008,0    ,0   
+TAG1,RPM_VARIADOR                                      ,6    ,00000000,00000000,00000000,00000008,0    ,0   
+TAG1,SIM                                               ,8    ,00000000,00000000,00000000,00000010,0    ,0   
+TAG1,SP_HZ                                             ,3    ,00000000,00000000,00000000,00000008,0    ,0   

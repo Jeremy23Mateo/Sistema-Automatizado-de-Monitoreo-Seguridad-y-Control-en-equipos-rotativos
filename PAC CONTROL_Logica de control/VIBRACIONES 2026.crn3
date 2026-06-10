@@ -1,0 +1,98 @@
+CREATE T.ARRAY
+&Powerup ,
+ 0 ,
+CREATE V.ARRAY
+^FRECUENCIA ,
+^HZ_SP ,
+^HZ_VARIADOR ,
+^node_red ,
+^ON_OFF_VAR ,
+^RESET_ERROR ,
+^RPM_VARIADOR ,
+^SIM ,
+^SP_HZ ,
+*_HSV_SEMA ,
+*_HSV_TEMP ,
+ 0 ,
+CREATE TI.ARRAY
+ 0 ,
+CREATE PTR.ARRAY
+ 0 ,
+CREATE TA.ARRAY 
+ 0 ,
+CREATE PTRTABLE.ARRAY 
+ 0 ,
+CREATE B.ARRAY
+%GROV_EPIC ,
+ 0 ,
+CREATE P.ARRAY
+~AL_M1_CA ,
+~AL_M1_CB ,
+~AL_M2_CA ,
+~AL_M2_CB ,
+~AL_M3_CA ,
+~AL_M3_CB ,
+~AL_M4_CA ,
+~AL_M4_CB ,
+~AL_M6_CA ,
+~AL_M6_CB ,
+~AL_M7_CA ,
+~AL_M7_CB ,
+~AL_TEMP ,
+~BOCINA ,
+~M1_CA ,
+~M1_CB ,
+~M2_CA ,
+~M2_CB ,
+~M3_CA ,
+~M3_CB ,
+~M4_CA ,
+~M4_CB ,
+~M6_CA ,
+~M6_CB ,
+~M7_CA ,
+~M7_CB ,
+~TEMP ,
+~TEMP_GROOV ,
+ 0 ,
+CREATE PID.ARRAY
+ 0 ,
+CREATE E/R.ARRAY
+ 0 ,
+CREATE E/RGROUP.ARRAY
+ 0 ,
+: CONFIG_PORTS
+;
+: W_INIT_IO
+CONFIG_PORTS
+" %GROV_EPIC  (1/1)" *_HSV_INIT_IO $MOVE 0 ^_HNV_INIT_IO @!
+%GROV_EPIC ENABLE
+ " Initializing variables" *_HSV_INIT_IO $MOVE
+0.0000000 ^FRECUENCIA @!
+0 ^HZ_SP @!
+0 ^HZ_VARIADOR @!
+20 ^node_red @!
+0 ^ON_OFF_VAR @!
+0 ^RESET_ERROR @!
+0 ^RPM_VARIADOR @!
+0.0000000 ^SIM @!
+0 ^SP_HZ @!
+" i32.SP_HZ.rw" 7 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+" i32.RPM_VARIADOR.rw" 6 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+" i32.RESET_ERROR" 5 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+" i32.ON_OFF_VAR" 4 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+" i32.node_red" 3 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+" i32.HZ_VARIADOR.rw" 2 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+" i32.HZ_SP" 1 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+" f32.FRECUENCIA" 0 {stPrivateListOfStrategyTags $TABLE@ $MOVE
+ " " *_HSV_INIT_IO $MOVE
+;
+T: T_INIT_IO
+W_INIT_IO
+&Powerup START.T DROP
+T;
+&_INIT_IO ' T_INIT_IO  SETTASK
+   : _RUN
+   CLEARERRORS
+   &_INIT_IO START.T DROP
+   ;
